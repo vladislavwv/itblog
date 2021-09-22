@@ -1,0 +1,183 @@
+.wrapperInner {
+  width: 100%;
+  overflow: hidden;
+}
+.verticalMenu{
+  text-align: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 310px;
+  height: 100%;
+  padding: 40px 45px 30px;
+  background-color: transparent;
+  outline: 0;
+  z-index: 101;
+  -webkit-backface-visibility: hidden;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.verticalMenuArea{
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  vertical-align: middle;
+  height: 100%;
+}
+.verticalAreaBackground{
+  box-shadow: 0px 0px 15px 0px rgb(0 0 0 / 10%);
+  border: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 310px;
+  height: 100%;
+  background-color: #fff;
+  background-position: right top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  z-index: 0;
+  opacity: 1;
+  -webkit-transition: opacity .5s ease,background-color .5s ease;
+  -o-transition: opacity .5s ease,background-color .5s ease;
+  transition: opacity .5s ease,background-color .5s ease;
+}
+.mkdfLogoWrapper{
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  vertical-align: middle;
+  z-index: 100;
+  line-height: 1;
+}
+.mkdfLogoWrapper a{
+  color: #000;
+  font-family: 'Grechen Fuemen', cursive;
+  font-weight: bold;
+  font-size: 18px;
+}
+.verticalMenuOuter{
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  padding: 75px 0 100px;
+  vertical-align: middle;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  text-align: center;
+}
+.verticalDropdownBelow{
+  display: table;
+  width: 100%;
+  height: 100%;
+  min-height: 0;
+  position: relative;
+  vertical-align: middle;
+  margin: 0;
+  padding: 0;
+  z-index: 100;
+  text-align: center;
+}
+.verticalDropdownBelow ul{
+  display: table-cell;
+  width: 100%;
+  height: 100%;
+  vertical-align: middle;
+  text-align: center;
+  position: relative;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+.verticalDropdownBelow ul li{
+  position: relative;
+  padding: 0;
+  margin: 5px 0;
+}
+.verticalDropdownBelow ul li a{
+  font-size: 16px;
+  line-height: 33px;
+  color: #1e1e1e;
+  text-transform: uppercase;
+  font-weight: 600;
+  display: inline-block;
+  font-style: normal;
+  position: relative;
+  margin: 0;
+  padding: 4px 0;
+}
+.verticalDropdownBelow ul li a:hover .activeHover{
+  clip-path: inset(0 0 0 0);
+  -webkit-clip-path: inset(0 0 0 0);
+  -webkit-transition: 1s cubic-bezier(.23,.35,0,1.09);
+  -o-transition: 1s cubic-bezier(.23,.35,0,1.09);
+  transition: 1s cubic-bezier(.23,.35,0,1.09);
+}
+.verticalDropdownBelow ul li a:hover{
+  color: #59815b;
+}
+.verticalDropdownBelow ul li a polygon{
+  fill: #ecebe1;
+  stroke: #ecebe1;
+}
+.activeHover{
+  -webkit-transition: opacity .2s ease-out;
+  -o-transition: opacity .2s ease-out;
+  transition: opacity .2s ease-out;
+  clip-path: inset(0 100% 0 0);
+  -webkit-clip-path: inset(0 100% 0 0);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  width: calc(100% + 37px);
+  height: 100%;
+  position: absolute;
+  margin-left: -19px;
+  margin-top: -5px;
+  -webkit-transition: .2s;
+  -o-transition: .2s;
+  transition: .2s;
+  will-change: transform;
+}
+.itemOuter{
+  position: relative;
+  display: block;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.itemText{
+  position: relative;
+  display: inline-block;
+  vertical-align: top;
+}
+.activeHoverMiddle{
+  width: calc(100% - 31px);
+  left: 16px;
+  position: absolute;
+  top: 0;
+  height: 100%;
+  border-radius: 2px;
+  background-color: #ecebe1;
+}
+
+
+@media only screen and (max-width: 1400px){
+  .verticalMenu{
+    width: 260px;
+  }
+  .verticalAreaBackground{
+    width: 260px;
+  }
+}
+  
+ 
