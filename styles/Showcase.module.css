@@ -169,6 +169,58 @@
   border-radius: 2px;
   background-color: #ecebe1;
 }
+.content{
+  padding-left: 310px;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  background-image: url(https://wanderland.qodeinteractive.com/wp-content/uploads/2019/10/h6-bckg-img-01.jpg);
+  background-repeat: no-repeat;
+  background-position: center 0;
+  background-size: cover;
+}
+.fullWidth{
+  position: relative;
+  z-index: 100;
+}
+.gridRow{
+  margin-left: -15px;
+  margin-right: -15px;
+}
+.gridCol12{
+  position: relative;
+  float: left;
+  width: 100%;
+  min-height: 1px;
+  padding-left: 15px;
+  padding-right: 15px;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.mainCarusel .title{
+  line-height: 25px;
+  font-weight: 600;
+  font-size: 30px;
+}
+.mainCarusel .description{
+  line-height: 20px;
+  font-weight: 500;
+  font-size: 20px;
+}
+.mainCarusel .button a{
+  color: #fff;
+  background-color: #59815b;
+  position: relative;
+  display: inline-block;
+  vertical-align: middle;
+  width: auto;
+  margin: 0;
+  font-size: 16px;
+  line-height: 2em;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0;
+  padding: 11px 41px;
+}
 
 
 @media only screen and (max-width: 1400px){
@@ -177,6 +229,9 @@
   }
   .verticalAreaBackground{
     width: 260px;
+  }
+  .content{
+    padding-left: 260px;
   }
 }
   
