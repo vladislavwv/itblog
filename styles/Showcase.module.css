@@ -186,6 +186,12 @@
   margin-left: -15px;
   margin-right: -15px;
 }
+.mainCarusel{
+  background-image: url(https://wanderland.qodeinteractive.com/wp-content/uploads/2019/11/h6-rev-slide-shape.png);
+  background-repeat: no-repeat;
+  background-position: top right -15px;
+  background-size: 70% 100%;
+}
 .gridCol12{
   position: relative;
   float: left;

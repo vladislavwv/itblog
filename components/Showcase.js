@@ -1,4 +1,4 @@
-//+
+//С этой работал+
 import styles from '@/styles/Showcase.module.css'
 import Link from 'next/link'
 import { Container, Row, Col } from 'react-bootstrap'
@@ -7,7 +7,7 @@ import Slider from "react-slick";
 export default function Showcase({menu}) {
     
     let settings = {
-        dots: true
+        dots: true,
       };
     
   return (
@@ -56,50 +56,50 @@ export default function Showcase({menu}) {
     <div className={styles.content}>
         <div className={styles.contentInner}>
             <div className={styles.fullWidth}>
-                <Row className={styles.gridRow}>
-                    <Col md={12} className={styles.gridCol12}>
-                        <Row className={styles.gridRow}>
-                            <Col sm={12}>
-                                <Slider {...settings}>
-                                    <div className={styles.mainCarusel}>
-                                        
-                                        <Row className={styles.gridRow}>
-                                            <Col md={7}>
-                                                <img src="https://i.ibb.co/VQ5qRv8/h6-rev-slide3.png" width="100%" />
-                                            </Col>
-                                            <Col md={5}>
-                                                <div className={styles.title}>           
-                                                    New Paths to Discover. 
-                                                </div>
-                                                <p className={styles.description}>
-                                                    Lorem ipsum dolor sit amet, tetur adipng elit, sed do eiusmod tempor incididu nt ut.
-                                                </p>
-                                                <div className={styles.button}>
-                                                    <a href="">Read more</a>
-                                                </div>
-                                            </Col>
-                                            
-                                        </Row>
-                                        
-                                        <h3>1</h3>
-                                    </div>
-                                    <div>
-                                    <img src="https://wanderland.qodeinteractive.com/wp-content/uploads/2019/10/h6-bckg-img-01.jpg" width="300" />
-                                        <h3>2</h3>
-                                    </div>
-                                    <div>
-                                    <img src="https://wanderland.qodeinteractive.com/wp-content/uploads/2019/10/h6-bckg-img-01.jpg" width="300" />
-                                        <h3>3</h3>
-                                    </div>
-                                    <div>
-                                    <img src="https://wanderland.qodeinteractive.com/wp-content/uploads/2019/10/h6-bckg-img-01.jpg" width="300" />
-                                        <h3>4</h3>
-                                    </div>
-                                </Slider>
+            <Row>
+                <div className={'p-7 gx-lg-8 gx-xl-12 gy-10 align-items-center' + [styles.gridRow]}>
+                    <Slider {...settings}>
+                        <div className={styles.mainCarusel}>
+                        <Row className='align-items-center'>
+                            <Col md={7}>
+                                <img src="https://i.ibb.co/VQ5qRv8/h6-rev-slide3.png" width="100%" />
+                            </Col>
+                            <Col md={3} className={"pb-13 ps-8"}>
+                                <h1 className={'mb-5 mx-md-n5 mx-lg-0' + [styles.title]} >           
+                                    New Paths to Discover. 
+                                </h1>
+                                <p className={'mb-5 mx-md-n5 mx-lg-0' + [styles.description]} >
+                                    Lorem ipsum dolor sit amet, tetur adipng elit, sed do eiusmod tempor incididu nt ut.
+                                </p>
+                                <div className={styles.button}>
+                                    <a href="">Read more</a>
+                                </div>
                             </Col>
                         </Row>
-                    </Col>
-                </Row>
+                        </div>
+                        <div className={styles.mainCarusel}>
+                        <Row className='align-items-center'>
+                            <Col md={7}>
+                                <img src="https://i.ibb.co/VQ5qRv8/h6-rev-slide3.png" width="100%" />
+                            </Col>
+                            <Col md={3} className={"pb-13 ps-8"}>
+                                <h1 className={'mb-5 mx-md-n5 mx-lg-0' + [styles.title]} >           
+                                    New Paths to Discover. 
+                                </h1>
+                                <p className={'mb-5 mx-md-n5 mx-lg-0' + [styles.description]} >
+                                    Lorem ipsum dolor sit amet, tetur adipng elit, sed do eiusmod tempor incididu nt ut.
+                                </p>
+                                <div className={styles.button}>
+                                    <a href="">Read more</a>
+                                </div>
+                            </Col>
+                        </Row>
+                        </div>
+                    </Slider>
+                            
+                   
+                </div>
+            </Row>
             </div>
         </div>
     </div>
